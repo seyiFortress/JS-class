@@ -173,17 +173,67 @@ string.index('char');*/
 // let genNum_2 = Math.floor((Math.random() * 51) + 50);
 // console.log(genNum_2);
 
-let scoreInput = prompt(`Enter your Score!!!`);
-let intScore = parseInt(scoreInput);
+// let scoreInput = prompt(`Enter your Score!!!`);
+// let intScore = parseInt(scoreInput);
 
-if (intScore <= 49) {
-    console.log(`You have a grade "F" with that score`);
-} else if (intScore <= 59) {
-    console.log(`You have a grade "D" with that score`);
-} else if (intScore <= 69) {
-    console.log(`You have a grade "C" with that score`);
-} else if (intScore <= 89) {
-    console.log(`You have a grade "B" with that score`);
-} else if (intScore >= 90) {
-    console.log(`You have a grade "A" with that score`);
-};
+// if (intScore <= 49) {
+//     console.log(`You have a grade "F" with that score`);
+// } else if (intScore <= 59) {
+//     console.log(`You have a grade "D" with that score`);
+// } else if (intScore <= 69) {
+//     console.log(`You have a grade "C" with that score`);
+// } else if (intScore <= 89) {
+//     console.log(`You have a grade "B" with that score`);
+// } else if (intScore >= 90) {
+//     console.log(`You have a grade "A" with that score`);
+// };
+
+/* const newItem = [`pen`, 20, 9, 5, 'chicken', true, {name: `joy`}, undefined, `peter`];
+const arraySlice = newItem.slice(4);
+console.log(arraySlice);
+
+newItem.splice(2, 3, 3.5, false);
+console.log(newItem); */
+
+// array.push adds a value to the end of an array
+
+// array.pop removes the last item from the array
+
+// array.unshift adds a value to the start of an array
+
+// array.shift removes the first value of an array
+
+// array.reverse rearranges the array starting the values from the end to the start
+
+// array.sort rearranges values in alphabetical or numerical order
+
+/* const shoppingCart = [`Milk`, `Coffee`, `Tea`, `Honey`];
+
+if (shoppingCart.includes(`Meat`) == false) {
+    shoppingCart.unshift(`Meat`);
+}
+console.log(shoppingCart);
+
+if (shoppingCart.includes(`Sugar`) == false) {
+    shoppingCart.push(`Sugar`);
+}
+console.log(shoppingCart);
+
+shoppingCart[2] = `Green Tea`;
+console.log(shoppingCart); */
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+
+/* let sortAges = ages.sort();
+console.log(sortAges)
+
+let minAges = Math.min.apply(Math, ages);
+console.log(minAges);
+
+let maxAges = Math.max.apply(Math, ages);
+console.log(maxAges);
+
+// find the median
+if (sortAges % 2 === 0) {
+
+} */
