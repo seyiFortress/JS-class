@@ -1,5 +1,4 @@
-/*
-
+// object
 const person = {
     firstName: `John`,
     lastName: `Peter`,
@@ -9,33 +8,27 @@ const person = {
     getDetails: function () {
         return `My name is ${this.firstName} ${this.lastName}. I am from ${this.country}`
     }
-}
+} // defining the 'person' object
 console.log(person.lastName);
 console.log(person[`age`]);
 console.log(person.getDetails());
 
-person.gender = `Male`;
+// adding and assigning key values
+person.gender = `Male`; // add gender key
 console.log(person);
 
-*/
-/*
+// object static methods
+const person2 = Object.assign({}, person); // copy properties from another object using object.assign() method
+console.log(person2);
 
-const dog = {};
+const keysOfPerson2 = Object.keys(person2); // get property keys of an object using object.keys() method in array
+console.log(keysOfPerson2);
 
-dog[`name`] = `Bingo`;
-dog[`legs`] = 4;
-dog[`color`] = `Black`;
-dog[`age`] = 1.5;
-dog[`bark`] = function () {
-    return `woof woof!!!`
-}
-dog[`getDogInfo`] = function () {
-    let info = `The name of my ${this.color} dog is ${this.name}, it has ${this.legs} limbs and it is ${this.age} years of age. More so, it loves to bark; ${this.bark}.`
-    return info
-}
-dog[`breed`] = `Rothweiller`;
+const valuesOfPerson = Object.values(person); // get property values of an object using object.values() method in array
+console.log(valuesOfPerson);
 
-console.log(dog);
-console.log(dog.getDogInfo());
+const propOfPerson2 = Object.entries(person2); // get the keys and values of an object using object.entries() method in array
+console.log(propOfPerson2);
 
-*/
+isPresent = Object.hasOwn(person, `gender`); // check if a specific key exist in an object using object.hasown() method
+console.log(isPresent); // returns boolean

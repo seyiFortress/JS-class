@@ -54,7 +54,7 @@ let newNumbers = [1, 2, 3, 4, 5];
 console.log(newNumbers);
 
 newNumbers[0] = newNumbers[0] * 10;
-newNumbers[1] = newNumbers[1] * 10;
+newNumbers[1] *= 10;
 console.log(newNumbers);
 
 // getting array lenght
