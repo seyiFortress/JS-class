@@ -1,47 +1,35 @@
-
-/*
-function greet () {console.log(`good afternoon!!!`)};
+// functions with no argument
+function greet () {console.log(`good afternoon!!!`)}; // functions with no return 
 greet();
-*/
 
-// or
-
-/*
 function hr () {
     const newDate = new Date();
     let hour = newDate.getHours()
     return hour
-}
+} // functions with return
 console.log(hr());
-*/
 
-/*
-function greet() {
+function min() {
     const newDate = new Date();
     let minutes = newDate.getMinutes()
     return minutes;
-}
-console.log(greet());
-*/
+} // functions with return
+console.log(min());
 
-// functions with parameters
-
-/*
-function displayName (firstName, lastName) {
+// functions with argument
+function displayFullName (firstName, lastName) {
     let reply = `Hello my names are ${firstName} ${lastName}`
     return reply;
 }
-console.log(displayName(`seyi`, `fortress`));
-*/
+console.log(displayFullName(`seyi`, `fortress`)); // call function with 2 parameters
 
-/*
 function myLanguage(language) {
     let reply = `I speak ${language}`
     return reply
 };
-alert(myLanguage(`yoruba`));
-*/
+alert(myLanguage(`yoruba`)); // call function with a parameter
 
+// anonymous functions
 const minusNum = function (a, B) {
     return a - B
 };
@@ -52,6 +40,7 @@ const sum = (function (a) {
 })(3);
 console.log(sum);
 
+// arrow functions
 const moreWords = () => {
     first_name = `Ahmed`;
     last_name = `Abdulmojeed`;
@@ -59,29 +48,11 @@ const moreWords = () => {
 };
 console.log(moreWords);
 
-const oneWord = () => `Hello everyone` /* with explicit return */
+const oneWord = () => `Hello everyone` // with explicit return 
 
-/*
 const mathNum = (a, b) => {
     const sumNum = a + b;
     const productNum = a * b;
     return `${sumNum}, ${productNum}`
 }
 console.log(mathNum(3, 6));
-*/
-
-const fullName = (firstName, secondName) => {
-    return `My names are ${firstName} ${secondName}`
-};
-console.log(fullName(`Sarah`, `Petit`));
-
-function addNumbers(firstNum, secondNum) {
-    return firstNum + secondNum
-};
-console.log(addNumbers(4, 3));
-
-const areaOfRectangle = (function (lenght, width) {
-    const area = lenght * width;
-    return area
-})(9, 13);
-console.log(areaOfRectangle);
